@@ -1,10 +1,17 @@
-namespace ConsoleApp
+using System;
+
+public class Program
 {
-    internal class Program
+    public static void Main(string[] args)
     {
-        static void Main(string[] args)
+        int n = int.Parse(Console.ReadLine());
+        int sum = 0;
+
+        for (int i = 1; i <= n; i++)
         {
-            Console.WriteLine("Hello World");
+            sum += i;
         }
+
+        Console.WriteLine(sum);
     }
 }
